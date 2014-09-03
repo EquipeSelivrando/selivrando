@@ -1,0 +1,711 @@
+* {
+margin:0; 
+padding: 0;
+}
+
+html, body {
+height:100%;
+}
+
+#tudo{
+margin: 0 auto;
+}
+
+a{
+text-decoration:none;
+}
+
+ul, li{
+display: inline-block;
+}
+
+li.livrosespaco{
+padding: 15pt;
+}
+
+h1{ 
+font-size:55pt;
+font-family: 'Open Sans'; 
+font-weight: 800; 
+}
+
+h2{
+font-size:20pt;
+font-family: 'Open Sans';
+font-weight: 300;
+}
+
+h3{
+font-size:30pt;
+font-family: 'Open Sans';
+font-weight: 300;
+}
+
+h4{
+font-size:20pt;
+font-family: 'Open Sans';
+font-weight: 800;
+}
+
+h6{
+font-size:12pt;
+font-family: 'Open Sans';
+font-weight: 300;
+text-align: top;
+color: black;
+}
+
+/*menu*/
+.cd-header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 50px;
+background: rgba(255, 255, 255, 0.95);
+z-index: 2;
+}
+.cd-header:after {
+content: "";
+display: table;
+clear: both;
+}
+.cd-header #cd-logo {
+float: left; 
+margin: 0px 0 0 5%;
+}
+.cd-header #cd-logo img {
+display: block;
+width: 120px;
+}
+
+@media only screen and (min-width: 768px) {
+.cd-header {
+height: 70px;
+	}
+.cd-header #cd-logo {
+margin: 0px 0 0 5%;
+	}
+}
+
+.cd-main-nav {
+float: right;
+margin-right: 5%;
+width: 44px;
+height: 100%;
+  cursor: pointer;
+}
+.cd-main-nav ul {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+-webkit-transform: translateY(-100%);
+-moz-transform: translateY(-100%);
+-ms-transform: translateY(-100%);
+-o-transform: translateY(-100%);
+transform: translateY(-100%);
+}
+.cd-main-nav ul.is-visible {
+-webkit-transform: translateY(50px);
+-moz-transform: translateY(50px);
+-ms-transform: translateY(50px);
+-o-transform: translateY(50px);
+transform: translateY(50px);
+}
+.cd-main-nav a {
+display: block;
+height: 50px;
+line-height: 50px;
+padding-left: 5%;
+background: #2f292a;
+border-top: 1px solid #453c3d;
+color: #8e7d7f;
+}
+
+
+.cd-main-nav li:before {
+content: '';
+width: 100%;
+height: 3px;
+visibility: hidden;
+-webkit-transform: scaleX(0);
+-ms-transform: scaleX(0);
+transform: scaleX(0);
+background: #ffcc00;
+-webkit-transition: all .3s ease;
+transition: all .3s ease;
+display: block;
+}
+
+
+
+.cd-main-nav li:hover:before {
+content: "";
+width: 100%;
+height: 3px;
+background: #ffcc00;
+position: relative;
+display: block;
+visibility: visible;
+-webkit-transform: scaleX(1);
+-ms-transform: scaleX(1);
+transform: scaleX(1);
+}
+
+@media only screen and (min-width: 768px) {
+.cd-main-nav {
+width: auto;
+height: auto;
+background: none;
+cursor: auto;
+}
+.cd-main-nav ul {
+position: static;
+width: auto;
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+-ms-transform: translateY(0);
+-o-transform: translateY(0);
+transform: translateY(0);
+line-height: 70px;
+}
+.cd-main-nav ul.is-visible {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+-ms-transform: translateY(0);
+-o-transform: translateY(0);
+transform: translateY(0);
+}
+.cd-main-nav li {
+display: inline-block;
+margin-left: 1em;
+}
+.cd-main-nav a {
+display: inline-block;
+height: auto;
+line-height: normal;
+background: transparent;
+padding: .6em 1em;
+border-top: none;
+color: #3d3536;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 14px;
+font-size: 0.875rem;
+font-weight: bold;
+font-size: 14px;
+font-size: 0.875rem;
+font-family: Rajdhani;
+font-family: teko;
+font-weight: 200;
+font-size: 22px;
+  }
+
+}
+
+
+/*home*/
+.texto
+{
+width: 100%;
+min-height: 300px;
+background: #fff;
+color:#000;
+font-size:25px;
+text-align:center;
+padding-top: 30px;
+padding-bottom: 30px;
+position:relative;
+z-index:666;
+}
+
+.bg
+{
+height: 300px;
+width:100%;
+}
+
+
+.b1
+{
+background:url('../img/12277893894_7137579f18_k.jpg');
+}
+
+.b2
+{
+background:url('../img/12277622053_35bbe2265a_k.jpg');
+}
+  
+.b3
+{
+background:url('../img/12664994874_f777b5d157_k.jpg');
+}
+
+.b4
+{
+background:url('../img/12664994874_f777b5d157_k.jpg');
+}
+
+#livro1 {
+width:200px;
+height:250px;
+background-color: black;
+margin-left:40px;
+background:url('../img/12anos.jpg');
+}
+
+#livro2 {
+width:200px;
+height:250px;
+background-color: black;
+margin-left:260px;
+margin-top:-250px;
+}
+
+#livro3{
+width:200px;
+height:250px;
+background-color: black;
+margin-left: 480px;
+margin-top:-250px;
+
+}
+
+#livro4 {
+width:200px;
+height:250px;
+background-color: black;
+margin-left: 700px;
+margin-top:-250px;
+
+}
+
+#livro5 {
+width:200px;
+height:250px;
+background-color: black;
+margin-left: 920px;
+margin-top:-250px;
+}
+
+#livro6 {
+width:200px;
+height:250px;
+background-color: black;
+margin-left: 1140px;
+margin-top:-250px;
+}
+
+
+
+/*perfil*/
+h1.quantidade{
+color:#ffcc00;
+}
+
+h1.nomelivro{
+font-size:20pt;
+}
+
+h3.nomeautor{
+font-size:20pt;
+}
+
+a.editarperfil, a.editarperfil:link, a.editarperfil:hover, a.editarperfil:visited{
+color:#111;
+}
+
+#imgperfil{
+float:left;
+width:200px;
+height:200px;
+background:url('../img/perfil1.jpg');
+border-radius:50%;
+margin-left:80px;
+margin-top:100px;
+}
+
+#infoperfil{
+width:350px;
+height:900px;
+background-color:#ffcc00;
+text-align:center;
+}
+
+#conteudoperfil{
+margin-left:25%;
+margin-top:-1050px;
+width:1067px;
+height:1050px;
+background-color:#fff;
+}
+
+#qtdlivros{
+float:left;
+width:200px;
+height:200px;
+margin-left:30%;
+margin-top:-250px;
+background-color:#fff;
+text-align:center;
+}
+
+#qtdlivros2{
+float:left;
+width:200px;
+height:200px;
+margin-left:52%;
+margin-top:-250px;
+background-color:#ffff;
+text-align:center;
+}
+
+#qtdlivros3{
+float:left;
+width:200px;
+height:200px;
+margin-left:75%;
+margin-top:-250px;
+background-color:#ffff;
+text-align:center;
+}
+
+#livrosperfil{
+float:left;
+width:815px;
+height:200px;
+margin-top:100px;
+margin-left:5%;
+background-color:#fff;
+}
+
+#livroperfil1 {
+width:150px;
+height:200px;
+background:url('../img/12anos.jpg');
+margin-left:40px;
+}
+#livroperfil1:hover {
+-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
+transition: transform 0.3s ease-out, opacity 0.3s;
+-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s;
+opacity: 0.3;
+-webkit-transform: translate(0, 0px);
+-moz-transform: translate(0, 0px);
+transform: translate(0, 0px);
+}
+
+
+#livroperfil2 {
+width:150px;
+height:200px;
+background:url('../img/12anos.jpg');
+margin-top:-200px;
+marign-left:15px;
+}
+#livroperfil2:hover {
+-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
+transition: transform 0.3s ease-out, opacity 0.3s;
+-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s;
+opacity: 0.3;
+-webkit-transform: translate(0, 0px);
+-moz-transform: translate(0, 0px);
+transform: translate(0, 0px);
+}
+
+#livroperfil3{
+width:150px;
+height:200px;
+background:url('../img/12anos.jpg');
+margin-top:-200px;
+}
+#livroperfil3:hover {
+-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
+transition: transform 0.3s ease-out, opacity 0.3s;
+-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s;
+opacity: 0.3;
+-webkit-transform: translate(0, 0px);
+-moz-transform: translate(0, 0px);
+transform: translate(0, 0px);
+}
+
+#livroperfil4 {
+width:150px;
+height:200px;
+background:url('../img/12anos.jpg');
+margin-top:-200px;
+}
+#livroperfil4:hover {
+-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
+transition: transform 0.3s ease-out, opacity 0.3s;
+-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s;
+opacity: 0.3;
+-webkit-transform: translate(0, 0px);
+-moz-transform: translate(0, 0px);
+transform: translate(0, 0px);
+}
+
+#livroperfil5 {
+width:150px;
+height:200px;
+margin-left:40px;
+background:url('../img/12anos.jpg');
+}
+#livroperfil5:hover {
+-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
+transition: transform 0.3s ease-out, opacity 0.3s;
+-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s;
+opacity: 0.3;
+-webkit-transform: translate(0, 0px);
+-moz-transform: translate(0, 0px);
+transform: translate(0, 0px);
+}
+
+#livroperfil6 {
+width:150px;
+height:200px;
+background:url('../img/12anos.jpg');
+margin-top:-200px;
+}
+#livroperfil6:hover {
+-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
+transition: transform 0.3s ease-out, opacity 0.3s;
+-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s;
+opacity: 0.3;
+-webkit-transform: translate(0, 0px);
+-moz-transform: translate(0, 0px);
+transform: translate(0, 0px);
+}
+
+#livroperfil7{
+width:150px;
+height:200px;
+background:url('../img/12anos.jpg');
+margin-top:-200px;
+}
+#livroperfil7:hover {
+-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
+transition: transform 0.3s ease-out, opacity 0.3s;
+-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s;
+opacity: 0.3;
+-webkit-transform: translate(0, 0px);
+-moz-transform: translate(0, 0px);
+transform: translate(0, 0px);
+}
+
+#livroperfil8{
+width:150px;
+height:200px;
+background:url('../img/12anos.jpg');
+margin-top:-200px;
+}
+#livroperfil8:hover {
+-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
+transition: transform 0.3s ease-out, opacity 0.3s;
+-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s;
+opacity: 0.3;
+-webkit-transform: translate(0, 0px);
+-moz-transform: translate(0, 0px);
+transform: translate(0, 0px);
+}
+
+input[type="button"]{
+width:150px;
+height:30px;
+background:#363636;
+border:0;
+font-family:'Open Sans',sans-serif;
+font-size:12pt;
+font-weight:300;
+color:#fff;
+cursor:pointer;
+transition:background .3s;
+-webkit-transition:background .3s;
+}
+
+input[type="button"]:hover{
+background:#ffcf00;
+color:#fff;
+}
+
+
+#livroq1, #livroq5{
+margin-left:40px;
+}
+
+/*descrição do livro*/
+#imgdetalhe{
+width:500px;
+height:700px;
+background:url('../img/6667753677_b9d8226b46_b.jpg');
+float:left;
+margin-left:15%;
+margin-top:5%;
+}
+
+#descicaolivro{
+width:500px;
+height:450px;
+background-color:white;
+float:left;
+margin-top:5%;
+margin-left:5%;
+}
+
+h1.titulo{
+font-size:40pt;
+font-weight:800;
+color:#ffcc00;
+text-transform:uppercase;
+}
+
+h1.estadolivro{
+font-size:20pt;
+font-weight:300;
+color:#ffcc00;
+text-transform:uppercase;
+}
+
+h2.descricao{
+font-size:12pt;
+text-align:justify;
+color:#494949;
+}
+
+h3.autor{
+font-size:15pt;
+text-align:justify;
+color:#b4b3b3;
+font-weight:400;
+}
+
+input[type="button"].querolivro{
+margin-top:-50pt;
+margin-left:5%;
+width:500px;
+height:50pt;
+background:#dcdcdc;
+border:0;
+font-family:'Open Sans',sans-serif;
+font-size:20pt;
+color:#fff;
+cursor:pointer;
+transition:background .3s;
+-webkit-transition:background .3s;
+}
+
+input[type="button"].querolivro:hover{
+background:#ffcf00;
+}
+
+.tftable {
+font-size:12px;
+color:#b4b3b3;
+width:100%;
+border-width: 1px;
+border-color: #ffffff;
+border-collapse: collapse;
+}
+
+.tftable th {
+    font-size:12px;
+    background-color:#ffffff;
+border-width: 1px;
+padding: 8px;
+border-style: solid;
+border-color: #f0f0f0;
+text-align:left;
+ border-collapse: collapse;
+}
+
+.tftable tr {
+    background-color:#2f2f2f;
+     border-collapse: collapse;
+}
+
+.tftable td {
+    font-size:12px;
+border-width: 1px;
+padding: 8px;
+border-style: solid;
+border-color: #f0f0f0;
+ border-collapse: collapse;
+}
+
+.tftable tr:hover {
+    background-color:#ffcc00;
+     border-collapse: collapse;
+}
+
+ .botao{
+        font-size:10px;
+        color:#b4b3b3;
+        background:#ffffff;
+        border:0px;
+        width:80px;
+        height:19px;
+       }
+       
+a, a:visited
+{
+color:#cccccc;
+ border-collapse: collapse;
+}
+
+a:hover{
+color:#cccccc;
+ border-collapse: collapse;
+}
+
+#tabelaAdmin{
+margin-left: 400px;    
+margin-top:-800px;
+margin-right: 200px;
+}
+
+#tabelaUsuario{
+margin-left: 400px;    
+margin-top:-800px;
+margin-right: 200px;
+}
+
+#tabelaAdministradores{
+margin-left: 400px;    
+margin-top:-800px;
+margin-right: 200px;
+}
+
+#tabelaLivro{
+margin-left: 400px;    
+margin-top:-800px;
+margin-right: 200px;
+}
+
+#tabelaTroca{
+margin-left: 400px;    
+margin-top:-800px;
+margin-right: 200px;
+}
+
+
+tr, td, th{
+width:100%;
+background:#fff;
+margin-bottom:4%;
+border:1px solid #cccccc;
+padding:8%;
+font-family:'Open Sans',sans-serif;
+font-size:95%;
+color:#cccccc;
+cursor:pointer;
+transition:background .3s;
+-webkit-transition:background .3s;
+ border-collapse: collapse;
+}
+
+tr:hover, td:hover, th:hover{
+background:#ffcf00;
+color: #fff;
+ border-collapse: collapse;
+}

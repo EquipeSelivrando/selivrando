@@ -1,0 +1,674 @@
+* {
+margin:0; 
+padding: 0.1px;
+}
+
+html, body {
+height:100%;
+font-family: Open Sans; 
+-webkit-animation-delay:0.1s;
+-webkit-animation-name:fontflix;
+-webkit-animation-duration:0.1s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-timing-function:linear;
+}
+
+@font-face{
+font-family: Wolf in The City;
+font-weight: 300;
+src:url("../fonts/WolfintheCity.ttf");
+}
+
+@font-face{
+font-family: Wolf in The City Light;
+src:url("../fonts/WolfintheCity-Light.ttf");
+}
+
+@-webkit-keyframes fontflix{
+from {
+opacity: 1;
+}
+
+to {
+opacity: 1;
+}
+}
+
+#tudo{
+margin: 0 auto;
+}
+
+a{
+text-decoration:none;
+}
+
+h1{ 
+font-size:55pt;
+font-family: Open Sans;
+font-weight: 800; 
+src:url("../fonts/OpenSans-Regular.ttf");
+}
+
+h2{
+font-size:15pt;
+font-family: Open Sans;
+font-weight: 300;
+src:url("../fonts/OpenSans-Regular.ttf");
+}
+
+h2.menup{
+font-size:10pt;
+font-family: Open Sans;
+font-weight: 300;
+src:url("../fonts/OpenSans-Regular.ttf");
+}
+
+
+h3{
+font-size:30pt;
+font-family: Open Sans;
+font-weight: 300;
+}
+
+h4{
+font-size:20pt;
+font-family: Open Sans;
+font-weight: 800;
+}
+
+/*menu*/
+.cd-header {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 30px;
+background: rgba(255, 255, 255, 1);
+z-index: 101;
+}
+.cd-header:after {
+content: "";
+display: table;
+clear: both;
+}
+.cd-header #cd-logo {
+float: left; 
+margin: 0px 0 0 5%;
+}
+.cd-header #cd-logo img {
+display: block;
+width: 120px;
+}
+
+@media only screen and (min-width: 768px) {
+.cd-header {
+height: 70px;
+	}
+.cd-header #cd-logo {
+margin: 0px 0 0 5%;
+	}
+}
+
+.cd-main-nav {
+float: right;
+margin-right: 5%;
+width: 44px;
+height: 100%;
+cursor: pointer;
+}
+.cd-main-nav ul {b
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+-webkit-transform: translateY(-100%);
+-moz-transform: translateY(-100%);
+-ms-transform: translateY(-100%);
+-o-transform: translateY(-100%);
+transform: translateY(-100%);
+}
+.cd-main-nav ul.is-visible {
+-webkit-transform: translateY(50px);
+-moz-transform: translateY(50px);
+-ms-transform: translateY(50px);
+-o-transform: translateY(50px);
+transform: translateY(50px);
+}
+.cd-main-nav a {
+display: block;
+height: 50px;
+line-height: 50px;
+padding-left: 5%;
+background: #2f292a;
+border-top: 1px solid #453c3d;
+color: #8e7d7f;
+}
+
+.cd-main-nav li:before {
+content: '';
+width: 100%;
+height: 3px;
+visibility: visible;
+-webkit-transform: scaleX(0);
+-ms-transform: scaleX(0);
+transform: scaleX(0);
+background: #ffcc00;
+-webkit-transition: all .3s ease;
+transition: all .3s ease;
+display: block;
+}
+
+
+.cd-main-nav li:hover:before {
+content: "";
+width: 100%;
+height: 3px;
+background: #ffcc00;
+position: relative;
+display: block;
+visibility: visible;
+-webkit-transform: scaleX(1);
+-ms-transform: scaleX(1);
+transform: scaleX(1);
+}
+
+@media only screen and (min-width: 768px) {
+.cd-main-nav {
+width: auto;
+height: auto;
+background: none;
+cursor: auto;
+}
+.cd-main-nav ul {
+position: static;
+width: auto;
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+-ms-transform: translateY(0);
+-o-transform: translateY(0);
+transform: translateY(0);
+line-height: 70px;
+}
+.cd-main-nav ul.is-visible {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+-ms-transform: translateY(0);
+-o-transform: translateY(0);
+transform: translateY(0);
+}
+.cd-main-nav li {
+display: inline-block;
+margin-left: 1em;
+}
+.cd-main-nav a {
+display: inline-block;
+height: auto;
+line-height: normal;
+background: transparent;
+padding: .6em 1em;
+border-top: none;
+color: #3d3536;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 14px;
+font-size: 0.875rem;
+font-weight: bold;
+font-size: 14px;
+font-size: 0.875rem;
+font-family: Open Sans;
+font-family: Open Sans;
+font-weight: 200;
+font-size: 22px;
+  }
+
+}
+
+/*home*/
+input.busca{
+width:150px;
+height:30px;
+background:#fff;
+border:1px solid #ccc;
+font-family: 'Open Sans';
+font-size:10ptpt;
+color:#555;
+}
+
+input.buscar{
+width:100px;
+height:32px;
+background:#fff;
+border:1px solid #ccc;
+font-family: 'Open Sans';
+font-size:12pt;
+color:#555;
+}
+
+h1.hometexto{
+margin-top:100px;
+font-family: 'Wolf In The City';
+font-size:180pt;
+color:#ffcc00;
+letter-spacing: 5px;
+}
+
+h2.hometexto{
+margin-top:-70px;
+}
+
+h2.bamarelaf{
+font-size:50pt;
+margin-left:15px;
+font-weight:800;
+}
+
+a.button{
+font-size:15pt;
+font-family: Open Sans;
+font-weight: 300;
+color:#fff;
+}
+
+.button{
+width:100px;
+background:#d6d6d6;
+display:block;
+margin: 0 auto;
+padding:10px;
+text-align:center;
+text-decoration:none;
+color:#fffff;
+cursor:pointer;
+transition:background .3s;
+-webkit-transition:background .3s;
+}
+
+.button:hover{
+background:#ffcf00;
+}
+
+/*editar livro - botão*/
+
+a.buttonedit{
+font-size:12pt;
+font-family: Open Sans;
+font-weight: 300;
+color:#fff;
+}
+
+.buttonedit{
+width:100px;
+background:#cccccc;
+display:block;
+margin: 0 auto;
+padding:10px;
+text-align:center;
+text-decoration:none;
+color:#fffff;
+cursor:pointer;
+transition:background .3s;
+-webkit-transition:background .3s;
+}
+
+.buttonedit:hover{
+background:#ffcf00;
+}
+
+.bamarela{
+width:100%;
+height:100px;
+background-color: #ffcc00;
+color: white;
+}
+
+.bamarelab{
+width:100%;
+height:100px;
+margin-top:5%;
+background-color: #ffcc00;
+color: white;
+}
+
+.texto
+{
+width: 100%;
+height: 220px;
+/*background: #fff;*/
+color:#000;
+font-size:25px;
+text-align:center;
+padding-top: 30px;
+padding-bottom: 30px;
+position:relative;
+z-index:666;
+}
+
+.bg
+{
+height: 550px;
+width:100%;
+}
+
+.b1
+{
+background:url('../img/12277893894_7137579f18_k.jpg');
+}
+
+.b2
+{
+background:url('../img/12277622053_35bbe2265a_k.jpg');
+}
+
+.b2:before {
+height: 300px;
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: linear-gradient(to bottom, #111, transparent 100%);
+opacity: .5;
+}
+  
+.b3
+{
+background:url('../img/12664994874_f777b5d157_k.jpg');
+}
+
+.b4
+{
+background:url('../img/11041930508.png');
+}
+
+#livro1 {
+width:150px;
+height:200px;
+/*background-color: black;*/
+margin-left:70px;
+background:url('../img/12anos.jpg');
+}
+
+#livro2 {
+width:150px;
+height:200px;
+background-color: black;
+margin-left:255px;
+margin-top:-200px;
+background:url('../img/macbeth.jpg');
+}
+
+#livro3{
+width:150px;
+height:200px;
+background-color: black;
+margin-left: 440px;
+margin-top:-200px;
+
+}
+
+#livro4 {
+width:150px;
+height:200px;
+background-color: black;
+margin-left: 630px;
+margin-top:-200px;
+}
+
+#livro5 {
+width:150px;
+height:200px;
+background-color: black;
+margin-left: 820px;
+margin-top:-200px;
+}
+
+#livro6 {
+width:150px;
+height:200px;
+background-color: black;
+margin-left: 1010px;
+margin-top:-200px;
+}
+
+/*perfil*/
+ul.labelperfil{
+list-style: none;
+}
+
+li.labelperfil2{
+list-style: none;
+display: inline-block;
+}
+
+.t1{
+margin-left:-350px;
+}
+
+.t2{
+margin-right:90px;
+}
+
+/* PARA USAR A FONTE DA MARCA
+h1.perfiltexto{
+font-family: 'Wolf In The City Light';
+font-size:90pt;
+color:#fff;
+letter-spacing: 2px;
+margin-left:90px;
+margin-top:-25px;
+z-index: 101;
+position:absolute;
+}
+
+h1.perfiltexto2{
+font-family: 'Wolf In The City Light';
+font-size:90pt;
+color:#fff;
+letter-spacing: 2px;
+margin-left:690px;
+margin-top:-25px;
+z-index: 101;
+position:absolute;
+}
+*/
+
+h1.perfiltexto{
+font-family: 'Open Sans';
+font-weight:800;
+font-size:40pt;
+color:#fff;
+/*letter-spacing: 2px;*/
+margin-left:120px;
+/*margin-top:-25px;*/
+z-index: 101;
+position:absolute;
+}
+
+h1.perfiltexto2{
+font-family: 'Open Sans';
+font-weight:800;
+font-size:40pt;
+color:#fff;
+/*letter-spacing: 2px;*/
+margin-left:720px;
+/*margin-top:-25px;*/
+z-index: 101;
+position:absolute;
+}
+
+h2.nomesperfil {
+font-family: Open Sans; 
+position:relative;
+left:35px;
+}
+
+h1.dadosperfil{
+font-size:30pt;
+line-height:25px;
+color:#fff;
+opacity:100%;
+}
+
+h3.dadosperfilb{
+font-size:25pt;
+line-height:25px;
+color:#fff;
+opacity:100%;
+}
+
+.bgperfil
+{
+height: 300px;
+width:100%;
+}
+
+.imgperfil{
+width:200px;
+height:200px;
+background:url('../img/20650912.jpg');
+float:left;
+margin-left:5%;
+margin-top:6%;
+border-radius:100%;
+position: absolute;
+z-index: 101;
+}
+
+.infoperfil{
+width:400px;
+height:300px;
+float:left;
+margin-top:7%;
+margin-left:23%;
+position: absolute;
+z-index: 101;
+}
+
+#infolivros{
+width:550px;
+height:900px;
+float:left;
+border-radius:5px;
+margin-left:1.5%;
+}
+
+#favoritos{
+width:400px;
+height:100%;
+margin-left: 200px;
+float:left;
+}
+
+.testelivro{
+width:110px;
+height:110px;
+background-color:black;
+margin-left:10px;
+}
+
+ul.editeste, ul.tablivros{
+list-style: none;
+margin-top:30px;
+}
+
+li.linha{
+display: inline-block;
+top:10px;
+}
+
+/*editar perfil*/
+h1.editarperf{
+font-size:25pt;
+color: #848484;
+}
+
+form.edperfil{
+background: #ffffff;
+padding:5% 30%;
+}
+
+input.edperfil{
+width:92%;
+background:#fff;
+/*margin-top:2%;*/
+margin-bottom:4%;
+border:1px solid #ccc;
+padding:4%;
+font-family:'Open Sans',sans-serif;
+font-size:95%;
+color:#555;
+}
+
+input.edperfil[type="submit"]{
+width:100%;
+background:#cccccc;
+border:0;
+padding:4%;
+font-family:'Open Sans',sans-serif;
+font-size:100%;
+color:#fff;
+cursor:pointer;
+transition:background .3s;
+-webkit-transition:background .3s;
+}
+
+input.edperfil[type="submit"]:hover{
+background:#ffcf00;
+}
+
+input.buscar[type="submit"]{
+width:100px;
+height:32px;
+background:#cccccc;
+border:0;
+margin-left:5px;
+margin-top:10px;
+font-family:'Open Sans',sans-serif;
+font-size:100%;
+color:#fff;
+cursor:pointer;
+transition:background .3s;
+-webkit-transition:background .3s;
+}
+
+
+input.buscar[type="submit"]:hover{
+background:#ffcf00;
+}
+
+/*imagem contato*/
+#contato2{
+width: 100%;
+height: 100%;
+background-image: url('../img/guy-reading-1(pp_w951_h632).jpg');
+}
+
+/*data
+#data{
+font-family: Quartz MS;
+font-size:30pt;
+color:#000000;
+}
+*/
+
+/*descrição*/
+#imgdetalhe{
+width:400px;
+height:600px;
+margin-left: 100px;
+margin-top: 150px;
+background-color:#ffcf00;
+}
+#descricaolivro{
+width:500px;
+height:500px;
+float:left;
+margin-left: 700px;
+margin-right:150px;
+margin-top: -650px;
+}
+#quero{
+margin-left: 100px;
+
+}
